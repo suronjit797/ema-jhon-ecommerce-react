@@ -1,0 +1,42 @@
+.summary{
+    position: sticky;
+    top: 0;
+}
+
+
+.summary-header{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+.grand_total{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.summary_button button{
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s ease;
+    font-size: 16px;
+}
+
+.clear_btn{
+    background: #FF3030;
+}
+.clear_btn:active{
+    background: #ff0f0f;
+}
+.review_btn{
+    background: #FF9900;
+}
+.review_btn:active{
+    background: #ff7b00;
+}

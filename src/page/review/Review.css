@@ -1,0 +1,11 @@
+.review{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 100px;
+    gap: 100px;
+}
+
+.review_right{
+    background: #FF99004D;
+    padding: 25px 50px;
+}

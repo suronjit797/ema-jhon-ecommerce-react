@@ -1,0 +1,39 @@
+.shop{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.shop_body{
+    padding: 120px 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.shop_summary{
+    background-color: #ff99004d;
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .shop_body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 769px) {
+    .shop{
+        grid-template-columns: 1fr;
+    }
+    .shop_summary{
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 99px) {
+    .shop_body{
+        padding: 100px 60px 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+    }
+}
