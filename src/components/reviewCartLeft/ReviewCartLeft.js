@@ -5,7 +5,7 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import './ReviewCartLeft.css'
 
 
-const ReviewCartLeft = ({ img, name, price, shipping, quantity }) => {
+const ReviewCartLeft = ({ id, img, name, price, shipping, quantity, deleteHandler }) => {
 
     return (
         <div className='review_cart-left'>
@@ -22,7 +22,7 @@ const ReviewCartLeft = ({ img, name, price, shipping, quantity }) => {
                     <span className='text-orange'> {quantity} </span>
                 </p>
             </div>
-            <div className='review_cart-delete'>
+            <div className='review_cart-delete' onClick={()=>deleteHandler(id)}>
                 <FontAwesomeIcon icon={faTrashCan} />
             </div>
         </div>

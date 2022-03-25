@@ -50,6 +50,17 @@ function App() {
     localStorage.removeItem('cartItems')
     setCart([])
   }
+  const deleteHandler = id => {
+    let afterDeleted = cart.filter(item => item.id !== id)
+    setCart(afterDeleted)
+
+    let cartItemStorage = JSON.parse(localStorage.getItem('cartItems'))
+    delete cartItemStorage[id]
+    localStorage.setItem('cartItems', JSON.stringify(cartItemStorage))
+
+
+
+  }
 
   // useEffect(()=>{console.log(cart)}, [cart])
   useEffect(() => {
@@ -71,15 +82,11 @@ function App() {
       }
       Object.keys(localStorageValue).map(items => findProduct(items))
     }
-
-
   }, [products])
 
 
 
   return (
-
-
     <BrowserRouter>
       <Header />
       <Routes>
@@ -93,6 +100,7 @@ function App() {
         <Route path='/review' element={<Review
           cart={cart}
           allClearHandler={allClearHandler}
+          deleteHandler={deleteHandler}
         />} />
       </Routes>
 

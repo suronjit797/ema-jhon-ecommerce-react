@@ -5,7 +5,7 @@ import { faTrashCan, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './ShopSummary.css'
 import { Link } from 'react-router-dom';
 
-const ShopSummary = ({ cartItems, allClearHandler }) => {
+const ShopSummary = ({ cartItems, allClearHandler, secondBtn }) => {
     // console.log(cartItems)
 
     let shippingItems = 0
@@ -36,12 +36,23 @@ const ShopSummary = ({ cartItems, allClearHandler }) => {
                     <span className="mr-1">Clear Cart</span>
                     <FontAwesomeIcon icon={faTrashCan} />
                 </button>
-                <Link to='/review' >
-                    <button className='review_btn'>
-                        <span className="mr-1">Review Order</span>
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </button>
-                </Link>
+                {
+                    secondBtn === 'review' ? (
+                        <Link to='/review' >
+                            <button className='review_btn'>
+                                <span className="mr-1">Review Order</span>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </button>
+                        </Link>
+                    ) : (
+                        <Link to='/proceed' >
+                            <button className='review_btn'>
+                                <span className="mr-1">Proceed Order</span>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </button>
+                        </Link>
+                    )
+                }
             </div>
         </div>
     );

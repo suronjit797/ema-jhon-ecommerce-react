@@ -26,3 +26,17 @@ img{
 .mr-1{
     margin-right: 10px;
 }
+
+.btn_orange{
+    background-color: #FF9900;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: .3s ease;
+    display: inline-block;
+}
+
+.btn_orange:hover{
+    color: #fff;
+    background-color: #ff7300;
+}

@@ -1,0 +1,26 @@
+.home{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.home_left h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: #1C2B35;
+}
+
+.home_left .home_text{
+    margin: 50px 0;
+}
+
+.home_right img{
+    border-radius: 5px;
+    box-shadow: -20px 20px 0 0 #FFE0B3;
+    transition: .3s ease;
+}
+
+.home_right img:hover{
+    box-shadow: 0 0 0 0 #FFE0B3;
+}

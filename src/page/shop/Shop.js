@@ -19,7 +19,11 @@ const Shop = ({ products, addToCardHandler, cart, allClearHandler }) => {
                 }
             </div>
             <div className="shop_summary">
-                <ShopSummary cartItems={cart} allClearHandler={allClearHandler} />
+                <ShopSummary
+                    cartItems={cart}
+                    allClearHandler={allClearHandler}
+                    secondBtn = {'review'}
+                />
             </div>
         </section>
     );

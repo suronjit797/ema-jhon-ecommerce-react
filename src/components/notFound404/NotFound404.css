@@ -1,0 +1,20 @@
+.not_found{
+    min-height: calc(100vh - 80px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.four_o_for{
+    font-weight: 300;
+    font-size: 62px;
+    color: #2A414F;
+}
+
+.four_o_for .vr{
+    display: inline-block;
+    height: 45px;
+    width: 2px;
+    background: #FF9900;
+    margin: 0 20px;
+}
